@@ -4,10 +4,10 @@ import TargetIcon from "../assets/icons/target.svg";
 export const Banner = () => {
   return (
     <div className="bg-black text-white">
-      <div className="hidden sm:flex py-2 px-4">
+      <div className="hidden sm:flex py-6 px-4">
         <p className="text-lg">MockAI</p>
       </div>
-      <div className="py-2 px-4 flex gap-4 sm:hidden">
+      <div className="py-6 px-4 flex gap-4 sm:hidden">
         <div className="py-2 px-2">
           <MenuIcon className="text-white" width="24" height="24" />
         </div>

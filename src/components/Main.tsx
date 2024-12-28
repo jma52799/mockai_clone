@@ -4,13 +4,13 @@ import { QuestionSidebar } from "./QuestionSidebar";
 
 export const Main = () => {
     return (
-        <div className=""> 
+        <div className="w-full"> 
             <div className="hidden sm:flex bg-black border border-white/30">
                 <Feature />
             </div>
-            <div className="flex gap-2 bg-black">
+            <div className="sm:flex sm:gap-2 bg-black max-h-screen ">
                 <QuestionSidebar />
-                <div className="flex-auto">
+                <div className="sm:flex-grow overflow-y-scroll">
                     <Questions />
                 </div>
             </div>
