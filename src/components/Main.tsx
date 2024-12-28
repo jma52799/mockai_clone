@@ -5,7 +5,7 @@ import { QuestionSidebar } from "./QuestionSidebar";
 export const Main = () => {
     return (
         <div className="flex-grow"> 
-            <div className="hidden sm:flex bg-black border border-white/30">
+            <div className="hidden sm:flex bg-black border-t border-b border-white/30">
                 <Feature />
             </div>
             <div className="flex gap-2 bg-black">

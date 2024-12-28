@@ -8,7 +8,7 @@ export const Feature = () => {
             </div>
             <div className="">
                 <div>
-                    <h1 className="text-3xl sm:text-4xl font-bold">150 Must Practice</h1>
+                    <h1 className="text-3xl sm:text-4xl sm:pb-3 font-bold">150 Must Practice</h1>
                     <p className="text-white/25 text-sm sm:text-[16px] max-w-[690px]">
                         These questions will cover all the important topics that you need
                         to ace a coding interview. You should practice these well before 
@@ -16,11 +16,11 @@ export const Feature = () => {
                     </p>
                 </div>
             </div>
-            <div className="ml-auto min-w-[70px]">
-                <p className="text-sm text-white/25">
+            <div className="ml-auto flex flex-col items-end">
+                <p className="text-sm sm:text-lg text-white/25 text-nowrap">
                     <span className="text-4xl text-white font-bold">2</span> / 150
                 </p>
-                <p className="text-sm text-white/25">Solved</p>
+                <p className="text-sm sm:text-lg tracking-tight text-white/25">Solved</p>
             </div>
         </div>
     );

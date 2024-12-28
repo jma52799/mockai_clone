@@ -8,11 +8,13 @@ export default function Home() {
     <>
       <Banner />
       <Filter />
-      <div className="flex">
-        <div className="hidden sm:inline-flex">
+      <div className="flex overflow-auto"> {/* overflow-auto */}
+        <div className="hidden sm:flex">
           <LeftNavbar />
         </div>
-        <Main />
+        <div className="flex-grow">
+          <Main />
+        </div>
       </div>
       
     </>
