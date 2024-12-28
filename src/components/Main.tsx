@@ -4,7 +4,7 @@ import { QuestionSidebar } from "./QuestionSidebar";
 
 export const Main = () => {
     return (
-        <div className=""> 
+        <div className="flex-grow"> 
             <div className="hidden sm:flex bg-black border border-white/30">
                 <Feature />
             </div>
