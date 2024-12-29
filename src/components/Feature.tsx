@@ -16,7 +16,7 @@ export const Feature = () => {
                     </p>
                 </div>
             </div>
-            <div className="ml-auto flex flex-col items-end">
+            <div className="ml-auto pr-4 flex flex-col items-end">
                 <p className="text-sm md:text-lg text-white/25 text-nowrap"> {/* sm:text-lg */}
                     <span className="text-4xl text-white font-bold">2</span> / 150
                 </p>

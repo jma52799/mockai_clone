@@ -5,19 +5,19 @@ import { LeftNavbar } from "@/components/LeftNavbar";
 
 export default function Home() {
   return (
-    <>
+    <div className="flex flex-col h-screen">
       <Banner />
       <Filter />
-      <div className="flex"> {/* overflow-auto */}
+      <div className="flex flex-1 overflow-hidden"> {/* overflow-auto */}
         <div className="hidden md:flex"> {/* sm:flex */}
           <LeftNavbar />
         </div>
-        <div className="flex-grow overflow-hidden"> {/* Prev no: overflow-hidden */}
+        <div className="flex-1 overflow-auto"> {/* Prev no: flex-grow overflow-hidden */}
           <Main />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
-//Changed page.tsx and global.css
+

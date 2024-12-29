@@ -8,6 +8,7 @@ import TimeIcon from "../assets/icons/time.svg";
 import SendIcon from "../assets/icons/send.svg";
 import SettingIcon from "../assets/icons/setting.svg";
 
+
 const navItems = [
     { id: "top150", label: "Top 150 Interview Questions", icon: TargetIcon },
     { id: "companies", label: "Practice for Companies", icon: OfficeIcon },
@@ -18,6 +19,9 @@ const navItems = [
 
 export const LeftNavbar = () => {
     const [selected, setSelected] = useState<string | null>(null); 
+    const [isModalOpen, setModalOpen] = useState(false); // New
+
+    const toggleModal = () => setModalOpen((prev) => !prev); // New
 
     const handleClick = (id: string) => {
         setSelected(id); 
@@ -54,7 +58,7 @@ export const LeftNavbar = () => {
                         Upgrade to<br />Premium
                     </h2>
                     <p className="text-white/50 text-sm mt-2">Unlock all features and access</p>
-                    <button className="text-black bg-white mt-4 min-w-full rounded-lg py-2">Upgrade</button>
+                    <button className="text-black bg-white mt-4 min-w-full rounded-lg py-2" onClick={toggleModal}>Upgrade</button> {/* New: onClick={toggleModal} */}
                 </div>
             </div>
             <div className="px-4 mt-4">
