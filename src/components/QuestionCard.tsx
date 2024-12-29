@@ -30,7 +30,7 @@ export const QuestionCard = ({ questionType, title }: QuestionCardProps) => {
                             
                         ))}
                     </div>
-                    <p className="text-white text-lg font-bold mt-2">{title}</p> {/* question title */}
+                    <p className="text-white text-lg md:text-xl font-bold mt-2">{title}</p> {/* question title */}
                 </div>
                 <div className="mt-3 md:mt-0 md:px-8 py-8 border border-white/25 rounded-md"> {/* Prev: no md */}
                     <div className="flex flex-col items-center gap-2 md:gap-4"> {/* Prev: no md */}
