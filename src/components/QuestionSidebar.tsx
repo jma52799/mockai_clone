@@ -57,7 +57,7 @@ export const QuestionSidebar = () => {
             <p className="pb-3">Lorem</p>
             <div className="flex flex-col gap-2">
                 {cards1.map((card) => (
-                    <div key={card.text} className="bg-white/20 flex items-center gap-2 px-2 py-1">
+                    <div key={card.text} className="bg-white/20 flex items-center gap-2 px-2 py-2">
                         <div className={clsx("w-4 h-4 rounded-full", card.filled ? "bg-white" : "bg-transparent")} />
                         <p>{card.text}</p>
                     </div>
@@ -66,7 +66,7 @@ export const QuestionSidebar = () => {
             <p className="py-3">Lorem</p>
             <div className="flex flex-col gap-2">
                 {cards2.map((card) => (
-                    <div key={card.text} className="bg-white/20 flex items-center gap-2 px-2 py-1">
+                    <div key={card.text} className="bg-white/20 flex items-center gap-2 px-2 py-2">
                         <div className={clsx("w-4 h-4 rounded-full", card.filled ? "bg-white" : "bg-transparent  border border-white")} />
                         <p>{card.text}</p>
                     </div>
