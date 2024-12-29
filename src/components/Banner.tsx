@@ -4,8 +4,9 @@ import TargetIcon from "../assets/icons/target.svg";
 export const Banner = () => {
   return (
     <div className="bg-black md:bg-black/95 text-white"> {/* Prev no: md:bg-black/95 */}
-      <div className="hidden md:flex py-4 px-6"> {/* sm:flex */}
+      <div className="hidden md:inline-flex py-4 px-6 border-r border-white/25"> {/* sm:flex */}
         <p className="text-lg sm:text-xl">MockAI</p>
+        <div className="ml-[145px]"></div> {/* Vertical line */}
       </div>
       <div className="py-4 px-4 flex gap-4 md:hidden"> {/* sm:hidden */}
         <div className="py-2 px-2">

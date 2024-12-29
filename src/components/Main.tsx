@@ -9,9 +9,9 @@ export const Main = () => {
                 <Feature />
             </div>
             <div className="px-4 bg-black">
-                <div className="flex gap-2 md:border-t border-white/30"> {/*  */}   
+                <div className="flex gap-2 md:border-t border-white/30 overflow-scroll"> 
                     <QuestionSidebar />
-                    <div className="flex-auto">
+                    <div className="flex-auto"> {/* overflow-x-scroll */}   
                         <Questions />
                     </div>
                 </div>
