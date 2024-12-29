@@ -39,6 +39,11 @@ export const LeftNavbar = () => {
                         >
                             <Icon className="text-inherit group-hover:text-white transition" width="23" height="23" />
                             <p className="text-sm whitespace-nowrap group-hover:text-white transition">{item.label}</p>
+                            {(item.id === "my" || item.id === "applications") && (
+                                <div className="ml-auto flex-shrink-0 w-5 h-5 flex items-center justify-center bg-white text-black rounded-full text-xs font-bold">
+                                    2
+                                </div>
+                            )}
                         </a>
                     );
                 })}

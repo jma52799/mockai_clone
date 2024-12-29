@@ -4,12 +4,12 @@ import { QuestionSidebar } from "./QuestionSidebar";
 
 export const Main = () => {
     return (
-        <div className="flex-grow"> 
-            <div className="hidden md:flex bg-black border-t border-white/30"> {/* sm:flex */}
+        <div className="flex-grow">  
+            <div className="hidden md:flex bg-black border-t border-white/30"> {/* sm:flex */} 
                 <Feature />
             </div>
             <div className="px-4 bg-black">
-                <div className="flex gap-2  overflow-scroll border-t border-white/30"> {/* no overflow-scroll */}   
+                <div className="flex gap-2 md:border-t border-white/30"> {/*  */}   
                     <QuestionSidebar />
                     <div className="flex-auto">
                         <Questions />

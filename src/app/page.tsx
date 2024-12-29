@@ -8,11 +8,11 @@ export default function Home() {
     <>
       <Banner />
       <Filter />
-      <div className="flex "> {/* overflow-auto */}
+      <div className="flex"> {/* overflow-auto */}
         <div className="hidden md:flex"> {/* sm:flex */}
           <LeftNavbar />
         </div>
-        <div className="flex-grow "> {/* flex-grow */}
+        <div className="flex-grow overflow-hidden"> {/* Prev no: overflow-hidden */}
           <Main />
         </div>
       </div>
