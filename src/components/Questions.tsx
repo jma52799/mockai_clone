@@ -26,7 +26,7 @@ const questions = [
 export const Questions = () => {
     return (
         <div className="bg-black px-4 pb-16">
-            <div className="hidden sm:flex py-4">
+            <div className="hidden md:flex py-4"> {/* sm:flex */}
                 <span className="text-sm text-white/30">Showing 5 of 150</span>
             </div>
             <div>

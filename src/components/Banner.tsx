@@ -3,11 +3,11 @@ import InfoIcon from "../assets/icons/info.svg";
 import TargetIcon from "../assets/icons/target.svg";
 export const Banner = () => {
   return (
-    <div className="bg-black text-white">
-      <div className="hidden sm:flex py-4 px-6">
+    <div className="bg-black md:bg-black/95 text-white"> {/* Prev no: md:bg-black/95 */}
+      <div className="hidden md:flex py-4 px-6"> {/* sm:flex */}
         <p className="text-lg sm:text-xl">MockAI</p>
       </div>
-      <div className="py-4 px-4 flex gap-4 sm:hidden">
+      <div className="py-4 px-4 flex gap-4 md:hidden"> {/* sm:hidden */}
         <div className="py-2 px-2">
           <MenuIcon className="text-white" width="24" height="24" />
         </div>

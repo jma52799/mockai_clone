@@ -5,13 +5,15 @@ import { QuestionSidebar } from "./QuestionSidebar";
 export const Main = () => {
     return (
         <div className="flex-grow"> 
-            <div className="hidden sm:flex bg-black border-t border-b border-white/30">
+            <div className="hidden md:flex bg-black border-t border-white/30"> {/* sm:flex */}
                 <Feature />
             </div>
-            <div className="flex gap-2 bg-black overflow-scroll"> {/* no overflow-scroll */}   
-                <QuestionSidebar />
-                <div className="flex-auto">
-                    <Questions />
+            <div className="px-4 bg-black">
+                <div className="flex gap-2  overflow-scroll border-t border-white/30"> {/* no overflow-scroll */}   
+                    <QuestionSidebar />
+                    <div className="flex-auto">
+                        <Questions />
+                    </div>
                 </div>
             </div>
         </div>

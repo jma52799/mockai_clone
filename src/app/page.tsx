@@ -9,7 +9,7 @@ export default function Home() {
       <Banner />
       <Filter />
       <div className="flex "> {/* overflow-auto */}
-        <div className="hidden sm:flex">
+        <div className="hidden md:flex"> {/* sm:flex */}
           <LeftNavbar />
         </div>
         <div className="flex-grow "> {/* flex-grow */}

@@ -49,7 +49,7 @@ const cards2 = [
 
 export const QuestionSidebar = () => {
     return (
-        <div className="hidden sm:inline text-white pl-4 py-3 relative">
+        <div className="hidden md:inline text-white pl-4 py-3 relative"> {/* sm:inline */}
             <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div> {/* Blur overlay */}
             <div className="absolute "> {/* Lock icon overlay */}
                 <LockIcon width="20" height="20" />
