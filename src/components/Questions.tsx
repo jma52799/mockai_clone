@@ -29,7 +29,7 @@ export const Questions = () => {
             <div className="hidden md:flex py-4"> {/* sm:flex */}
                 <span className="text-sm text-white/30">Showing 5 of 150</span>
             </div>
-            <div>
+            <div className="">
                 {questions.map((question) => (
                     <QuestionCard key={question.title} questionType={question.questionType} title={question.title} />
                 ))}

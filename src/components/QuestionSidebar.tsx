@@ -51,7 +51,7 @@ export const QuestionSidebar = () => {
     return (
         <div className="hidden md:inline text-white pl-4 py-3 relative"> {/* sm:inline */}
             <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div> {/* Blur overlay */}
-            <div className="absolute "> {/* Lock icon overlay */}
+            <div className="absolute inset-0 flex items-center justify-center"> {/* Lock icon overlay */}
                 <LockIcon width="20" height="20" />
             </div> 
             <p className="pb-3">Lorem</p>

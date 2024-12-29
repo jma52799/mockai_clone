@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { QuestionsContext } from "@/contexts/questions-context-provider";
+import { useContext } from "react";
 import TargetIcon from "../assets/icons/target.svg";
 import OfficeIcon from "../assets/icons/office.svg";
 import BracketIcon from "../assets/icons/bracket.svg";
@@ -19,16 +21,15 @@ const navItems = [
 
 export const LeftNavbar = () => {
     const [selected, setSelected] = useState<string | null>(null); 
-    const [isModalOpen, setModalOpen] = useState(false); // New
 
-    const toggleModal = () => setModalOpen((prev) => !prev); // New
+    const { completedQuestions } = useContext(QuestionsContext)!;
 
     const handleClick = (id: string) => {
         setSelected(id); 
     };
 
     return (
-        <div className="bg-black/95 border-t border-r border-white/25">
+        <div className="flex flex-col bg-black/95 border-t border-r border-white/25">
             <nav className="px-4 py-4 flex flex-col gap-4 text-white/50 "> {/* border-t border-r border-white/25 */}
                 {navItems.map((item) => {
                     const Icon = item.icon;
@@ -45,23 +46,23 @@ export const LeftNavbar = () => {
                             <p className="text-sm whitespace-nowrap group-hover:text-white transition">{item.label}</p>
                             {(item.id === "my" || item.id === "applications") && (
                                 <div className="ml-auto flex-shrink-0 w-5 h-5 flex items-center justify-center bg-white text-black rounded-full text-xs font-bold">
-                                    2
+                                    {completedQuestions}
                                 </div>
                             )}
                         </a>
                     );
                 })}
             </nav>
-            <div className="px-4">
+            <div className="px-4 mt-auto">
                 <div className="bg-black px-3 py-3 rounded-lg border-2 border-dashed border-white/10">
                     <h2 className="text-2xl font-bold text-white">
                         Upgrade to<br />Premium
                     </h2>
                     <p className="text-white/50 text-sm mt-2">Unlock all features and access</p>
-                    <button className="text-black bg-white mt-4 min-w-full rounded-lg py-2" onClick={toggleModal}>Upgrade</button> {/* New: onClick={toggleModal} */}
+                    <button className="text-black bg-white mt-4 min-w-full rounded-lg py-2">Upgrade</button> {/* New: onClick={toggleModal} */}
                 </div>
             </div>
-            <div className="px-4 mt-4">
+            <div className="px-4 mt-4 mb-4">
                 <div className="flex items-center justify-between bg-black px-3 py-2 rounded-lg border-2 border-dashed border-white/10">
                     <p className="text-white/50">Szu Jay Ma</p>
                     <SettingIcon className="text-white" width="20" height="20" />
