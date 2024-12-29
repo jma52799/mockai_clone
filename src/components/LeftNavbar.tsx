@@ -30,7 +30,7 @@ export const LeftNavbar = () => {
 
     return (
         <div className="flex flex-col bg-black/95 border-t border-r border-white/25">
-            <nav className="px-4 py-4 flex flex-col gap-4 text-white/50 "> {/* border-t border-r border-white/25 */}
+            <nav className="px-4 py-4 flex flex-col gap-4 text-white/50 "> 
                 {navItems.map((item) => {
                     const Icon = item.icon;
                     return (

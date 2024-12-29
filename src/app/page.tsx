@@ -9,12 +9,12 @@ export default function Home() {
     <div className="flex flex-col h-screen">
       <Banner />
       <Filter />
-      <div className="flex flex-1 overflow-hidden"> {/* overflow-auto */}
+      <div className="flex flex-1 overflow-hidden"> 
         <QuestionsContextProvider>
-          <div className="hidden md:flex"> {/* sm:flex */}
+          <div className="hidden md:flex"> 
             <LeftNavbar />
           </div>
-          <div className="flex-1 overflow-auto"> {/* Prev no: flex-grow overflow-hidden */}
+          <div className="flex-1 overflow-auto"> 
             <Main />
           </div>
         </QuestionsContextProvider>
