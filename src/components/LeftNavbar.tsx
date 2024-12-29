@@ -20,7 +20,7 @@ const navItems = [
 ];
 
 export const LeftNavbar = () => {
-    const [selected, setSelected] = useState<string | null>(null); 
+    const [selected, setSelected] = useState<string | null>("top150"); 
 
     const { completedQuestions } = useContext(QuestionsContext)!;
 
