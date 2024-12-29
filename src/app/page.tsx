@@ -8,16 +8,16 @@ export default function Home() {
     <>
       <Banner />
       <Filter />
-      <div className="flex overflow-auto"> {/* overflow-auto */}
+      <div className="flex "> {/* overflow-auto */}
         <div className="hidden sm:flex">
           <LeftNavbar />
         </div>
-        <div className="flex-grow">
+        <div className="flex-grow "> {/* flex-grow */}
           <Main />
         </div>
       </div>
-      
     </>
   );
 }
 
+//Changed page.tsx and global.css

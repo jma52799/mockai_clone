@@ -8,7 +8,7 @@ export const Main = () => {
             <div className="hidden sm:flex bg-black border-t border-b border-white/30">
                 <Feature />
             </div>
-            <div className="flex gap-2 bg-black">
+            <div className="flex gap-2 bg-black overflow-scroll"> {/* no overflow-scroll */}   
                 <QuestionSidebar />
                 <div className="flex-auto">
                     <Questions />
