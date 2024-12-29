@@ -9,7 +9,7 @@ export const Main = () => {
                 <Feature />
             </div>
             <div className="flex gap-2 md:border-t border-white/30 px-4 bg-black overflow-scroll">   {/* */}
-                <div className="hidden md:inline-flex sticky top-0 max-w-64">
+                <div className="hidden md:block sticky top-0 flex-auto max-w-md">
                     <QuestionSidebar /> 
                 </div>  
                 <div className="flex-auto">  
